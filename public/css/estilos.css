@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    color: #1f2937;
+    background: #f3f4f6;
+}
+
+a {
+    color: #2563eb;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+main.contenedor {
+    flex: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Header */
+.cabecera {
+    background: #111827;
+    color: #fff;
+}
+
+.cabecera__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.cabecera__logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__saludo {
+    font-weight: 600;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.boton--secundario {
+    background: transparent;
+    border-color: #fff;
+}
+
+.boton--secundario:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #111827;
+}
+
+/* Contenido */
+.tarjeta {
+    padding: 32px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tarjeta h1 {
+    margin-bottom: 12px;
+}
+
+.tarjeta--formulario {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.formulario input {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.formulario .boton {
+    margin-top: 8px;
+}
+
+.aviso {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+/* Footer */
+.pie {
+    padding: 20px 16px;
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+}
